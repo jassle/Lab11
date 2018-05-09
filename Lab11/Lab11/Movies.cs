@@ -8,10 +8,19 @@ namespace Lab11
 {
     class Movies
     {
-        #endregion
+        private string movieName;
+        private string category;
         #region Properties
-        public string MovieName { get => MovieName; set => MovieName = value; }
-        public string Category { get => Category; set => Category = value; }
+        public string MovieName
+        {
+            set { movieName = value; }
+            get { return movieName; }
+        }
+        public string Category
+        {
+            set { category = value; }
+            get { return category; }
+        }
         #endregion
         #region Constructors
         public Movies(string m, string c)
